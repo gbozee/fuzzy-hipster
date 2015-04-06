@@ -36,6 +36,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'djcelery',
     'polls',
 )
 
@@ -106,3 +107,5 @@ TEMPLATES = [
         },
     },
 ]
+
+BROKER_URL = 'amqp://mysite:punnisher@192.168.33.10:5672//'
